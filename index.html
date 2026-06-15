@@ -3,69 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Aeterna Studios</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
 body{
-    margin:0;
-    background:#0a0a0a;
-    color:white;
-    font-family:Arial,sans-serif;
+background:#0a0a0a;
+color:white;
 }
 
-header{
-    text-align:center;
-    padding:100px 20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.9);
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+z-index:1000;
 }
 
-h1{
-    font-size:60px;
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-p{
-    font-size:20px;
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(to bottom,#0a0a0a,#141414);
 }
 
-.button{
-    display:inline-block;
-    margin:10px;
-    padding:15px 30px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    border-radius:8px;
+.logo{
+font-size:70px;
+font-weight:bold;
+color:#ff7a00;
+}
+
+.subtitle{
+font-size:24px;
+margin-top:15px;
+color:#cccccc;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 30px;
+background:#ff7a00;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
 
 section{
-    padding:50px;
+padding:100px 10%;
+}
+
+h2{
+color:#ff7a00;
+margin-bottom:20px;
+}
+
+.card{
+background:#141414;
+padding:25px;
+border-radius:10px;
+margin-top:20px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#111;
 }
 
 </style>
 </head>
-
 <body>
 
-<header>
-<h1>AETERNA STUDIOS</h1>
+<nav>
+<a href="#about">À propos</a>
+<a href="#projects">Projets</a>
+<a href="#community">Communauté</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<p>Creating Worlds. Building Experiences.</p>
+<div class="hero">
 
-<a class="button" href="#">Nos Jeux</a>
-<a class="button" href="#">Communauté</a>
+<div class="logo">
+AETERNA
+</div>
 
-</header>
+<div class="subtitle">
+Creating Worlds. Forever.
+</div>
 
-<section>
+<a class="btn" href="#projects">
+Découvrir
+</a>
+
+</div>
+
+<section id="about">
 
 <h2>À propos</h2>
 
-<p>
-Aeterna Studios est un studio indépendant dédié à la création
-d'expériences immersives et de communautés passionnées.
-</p>
+<div class="card">
+
+Aeterna Studios est un studio indépendant spécialisé dans la création
+d'univers immersifs et d'expériences mémorables.
+
+Notre objectif est de développer des jeux ambitieux,
+de construire une communauté solide
+et de créer des projets qui marquent les joueurs.
+
+</div>
 
 </section>
+
+<section id="projects">
+
+<h2>Projet Principal</h2>
+
+<div class="card">
+
+<h3>PHANTOM PROTOCOL</h3>
+
+<br>
+
+FPS militaire moderne.
+
+• Campagne scénarisée
+
+• Multijoueur
+
+• Coopération
+
+• Univers original
+
+• Gameplay tactique
+
+</div>
+
+</section>
+
+<section id="community">
+
+<h2>Communauté</h2>
+
+<div class="card">
+
+<p>
+YouTube :
+</p>
+
+<br>
+
+<a style="color:#ff7a00"
+href="https://www.youtube.com/@aeterna-studios"
+target="_blank">
+Aeterna Studios
+</a>
+
+<br><br>
+
+<p>
+TikTok :
+</p>
+
+<br>
+
+<a style="color:#ff7a00"
+href="https://www.tiktok.com/@iron_wolf_studios"
+target="_blank">
+@iron_wolf_studios
+</a>
+
+<br><br>
+
+<p>
+Discord : Bientôt disponible
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+Pour toute demande professionnelle :
+
+contact@aeterna-studios.com
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Aeterna Studios
+
+</footer>
 
 </body>
 </html>
